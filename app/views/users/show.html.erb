@@ -1,4 +1,4 @@
-<% if logged_in? %>
+
   <h1>Task一覧</h1>
   
   <table class="table table-striped">
@@ -24,7 +24,5 @@
       <%= paginate @tasks %>
     </div>
   </table>
-<% end %>
-  
-<%= link_to '新しいTaskを追加する', new_task_path, class: "mb-5 btn btn-primary" %>
+  <%= link_to '新しいTaskを追加する', new_task_path, class: "mb-5 btn btn-primary" %>
 
